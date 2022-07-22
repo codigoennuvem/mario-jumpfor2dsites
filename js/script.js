@@ -3,6 +3,7 @@ const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const audioJump = document.querySelector('.audiojump');
 const gameOver = document.querySelector('.gameover');
+const textStart = document.querySelector('#text-start')
 /*=============================================================*/
 
 /*========================Jump Settings========================*/
@@ -34,10 +35,13 @@ const loop = setInterval(() => {
         mario.src = 'img/game-over.png';
         mario.style.width = '75px';
         mario.style.marginLeft = '50px'
-        
+
         gameOver.currentTime = 0.1;
         gameOver.volume = 0.2;
         gameOver.play();
+
+        document.getElementById("text-start").style.color = "black";
+        document.getElementById("text-start").innerHTML = "<strong>GAME OVER</strong>";
 
         clearInterval(loop);
     }

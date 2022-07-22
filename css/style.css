@@ -6,6 +6,13 @@
     box-sizing: border-box;
     user-select: none;
 }
+
+p {
+    font-family: 'Press Start 2P', monospace;
+    padding: 50px;
+    text-align: center;
+    color: black;
+}
 /*====================================================*/
 
 /*===================Game Settings====================*/
@@ -41,6 +48,8 @@
     width: 550px;
     animation: clouds-animation 20s infinite linear;
 }
+
+
 /*=====================================================*/
 
 /*======================KeyFrames======================*/
